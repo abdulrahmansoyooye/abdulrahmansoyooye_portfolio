@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  box-sizing: border-box;
+}
+:root {
+  --background-color: #ffff;
+  --alt-color: #f8f9fa;
+  --red-color: #dd494b;
+  --orange-color: #d67d3e;
+  --blue-color: #408b94;
+  --dark-blue-color: #132135;
+  --light-color: #ffffff;
+  --dark-color: #fffff;
+}
+body {
+  font-family: var(--font-tillium);
+  background-color: var(--background-color);
+}
+.serif-text {
+  font-family: var(--font-serif);
+}
+.tillium-text {
+  font-family: var(--font-tillium);
+}
+.notched-btn {
+  clip-path: polygon(
+    0% 30%,
+    /* top left */ 10% 0%,
+    /* top left */ 100% 0%,
+    /* top right */ 100% 0%,
+    /* top right */ 100% 95%,
+    /* bottom right */ 100% 100%,
+    /* bottom right */ 100% 100%,
+    /* bottom left */ 0 100% /* bottom left */
+  );
+}
+@layer utilities {
+  .bg-blur {
+    @apply break-inside-avoid bg-alt-color shadow-[inset_10px_100px_180px_0_rgb(199,199,199,0.3)] bg-clip-padding backdrop-blur-[0.5rem] backdrop-filter  h-fit;
+  }
+  .yellow_btn {
+    @apply bg-orange-color p-[1rem] rounded-md text-light-color w-full transition-all duration-300 hover:bg-orange-color;
+  }
+  .blue_btn {
+    @apply bg-blue-color p-[1rem] rounded-md text-light-color w-full transition-all duration-300 hover:bg-orange-color;
+  }
+  .black_btn {
+    @apply bg-dark-blue-color p-[1rem] rounded-md text-light-color w-full transition-all duration-300 hover:bg-orange-color;
+  }
+  .social_btn {
+    @apply rounded-full bg-[#ffff] p-[0.8rem] hover:bg-slate-100 cursor-pointer transition-all duration-500;
+  }
+  .red-gradient {
+    @apply bg-gradient-to-tl from-red-color via-red-color to-dark-blue-color  bg-clip-text text-transparent;
+  }
+  .orange-gradient {
+    @apply bg-gradient-to-tl from-orange-color via-orange-color to-dark-blue-color  bg-clip-text text-transparent;
+  }
+  .rounded {
+    @apply rounded-[0.8rem];
+  }
+  .large-text {
+    @apply text-[2.2rem] sm:text-[2.5rem];
+  }
+}
