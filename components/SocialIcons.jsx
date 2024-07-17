@@ -32,7 +32,7 @@ const SocialIcons = () => {
             target="_blank"
           >
             <Image
-              src={"/assets/socials/linkedIn.jpg"}
+              src={"/assets/socials/linkedin.jpg"}
               width={20}
               height={20}
               className="rounded-[50%] "
