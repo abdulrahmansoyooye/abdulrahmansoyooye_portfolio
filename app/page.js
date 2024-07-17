@@ -21,7 +21,7 @@ export default function Home() {
 
         <Hero />
       </div>
-      <div className="bg-alt-color pb-[5rem]  relative ">
+      <div className="bg-alt-color pb-[5rem] pt-[4rem] relative ">
         <img
           src="/assets/stacks/blue-bottom.svg"
           className="w-full absolute rotate-180 -z-50"
@@ -35,15 +35,15 @@ export default function Home() {
         />
         <Projects />
       </div>
-      <div className="bg-alt-color pb-[5rem] relative">
+      <div className=" pb-[5rem] relative">
         <Certified />
       </div>
       <div className="relative z-[100] bg-alt-color pb-[5rem]">
         <Experience />
       </div>
-      <div className="z-[100] bg-white pb-[5rem] relative">
+      {/* <div className="z-[100] bg-white pb-[5rem] relative">
         <Testimonials />
-      </div>{" "}
+      </div>{" "} */}
       <div className="z-[100] bg-alt-color pb-[5rem] relative">
         <Collaborate />
       </div>

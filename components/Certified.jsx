@@ -6,14 +6,16 @@ const Certified = () => {
     <div className="flex flex-col gap-[2rem]  p-[2rem] text-dark-blue-color z-50">
       <div className="flex flex-col sm:w-[70%] m-auto gap-[1rem]">
         <div className="large-text serif-text text-center">
-          Full Stack Developer{" "}
-          <span className="red-gradient">Certified By IBM</span>
+          I was also<span className="text-red-color"> Certified </span>by{" "}
+          <span className="text-red-color">IBM</span>
         </div>
-        <div className="text-[0.9rem] text-center">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis
-          ad, soluta et harum voluptate, illum explicabo ipsa reprehenderit nisi
-          beatae neque provident, dignissimos minima adipisci pariatur
-          distinctio? Tenetur, a? Dolorem.
+        <div className="text-[1rem] text-center">
+          I'm thrilled to share that I've earned a <strong>certificate</strong>{" "}
+          from <strong>Coursera</strong>! This accomplishment reflects my
+          dedication to continuous learning and my commitment to staying at the
+          forefront of web development. The skills and knowledge gained through
+          this course have further honed my abilities, enabling me to bring even
+          more value to my <strong>projects and collaborations</strong>.
         </div>
       </div>
       <div className="p-[2rem] rounded border-2 w-full sm:w-[70%] m-[0rem_auto]">

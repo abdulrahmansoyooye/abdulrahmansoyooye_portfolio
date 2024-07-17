@@ -45,7 +45,7 @@ body {
     @apply bg-gradient-to-tl from-red-color via-red-color to-dark-blue-color  bg-clip-text text-transparent;
   }
   .orange-gradient {
-    @apply bg-gradient-to-tl from-orange-color via-orange-color to-blue-color  bg-clip-text text-transparent;
+    @apply bg-gradient-to-tl from-orange-color via-orange-color to-dark-color  bg-clip-text text-transparent;
   }
   .rounded {
     @apply rounded-[0.8rem];

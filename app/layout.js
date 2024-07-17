@@ -1,7 +1,7 @@
-import { Titillium_Web, Bree_Serif, DM_Sans, Inika } from "next/font/google";
+import { Titillium_Web, Bree_Serif, DM_Sans, Inika, Aleo } from "next/font/google";
 import "./globals.css";
 
-const titillium_Web = Titillium_Web({
+const titillium_Web = Aleo({
   subsets: ["latin"],
   weight: ["200", "300", "400", "600", "700"],
 

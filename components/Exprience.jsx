@@ -1,28 +1,28 @@
 const experience = [
   {
-    Title: "Tech Lead",
-    location: "Sayf Network",
-    content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit Molestiae dolor tenetur, quo illum aperiam dicta libero ducimus veritatis quas nulla",
-  },
-  {
     Title: "Frontend Developer",
     location: "Sayf Network",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit Molestiae dolor tenetur, quo illum aperiam dicta libero ducimus veritatis quas nulla",
+      "As a frontend developer, I breathe life into web designs, creating interactive and visually appealing applications. My role was pivotal in Sayf Network, where I developed a sleek, mobile-responsive interface with a landing page and six additional pages",
+  },
+  {
+    Title: "",
+    location: "Personal Project",
+    content:
+      "One of my favorite personal projects is the Anonymous Message platform. This project showcases my ability to create secure and user-centric applications. I developed a system where users can send anonymous messages to the admin, ensuring their privacy and the security of their messages",
   },
   {
     Title: "Backend Developer",
-    location: "Sayf Network",
+    location: "Sayf Backend Team",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit Molestiae dolor tenetur, quo illum aperiam dicta libero ducimus veritatis quas nulla",
+      "In my role as a backend developer, I was the backbone of Sayf Backend and Islamic Q&A. For Sayf Backend, I designed and implemented robust CRUD operations, managing the interaction with the database and third-party platforms for resource uploads",
   },
 ];
 const Experience = () => {
   return (
     <div className="flex flex-col p-[2rem] text-dark-blue-color gap-[2rem]">
       <div className="large-text serif-text text-center ">
-        <span className="red-gradient">My Previous roles</span>
+        <span className="orange-gradient">Explore My Developer Journey</span>
       </div>
       {/* Experience */}
       <div className="flex flex-col border  p-[1rem] rounded  gap-[2rem] h-full sm:p-[3rem]">
@@ -35,9 +35,11 @@ const Experience = () => {
                 className="flex flex-col gap-[1rem] justify-start p-[2rem] bg-[#ffff] text-dark-blue-color rounded w-full sm:max-w-[40%]"
                 key={`${index}-${location}`}
               >
-                <p className="font-[600] text-[1.2rem]">{Title}</p>
-                <p className="text-sm ">{content}</p>
-                <p className="text-sm">{location}</p>
+                <p className="font-[600] text-[1.3rem]">{Title}</p>
+                <p className="text-[1rem] ">{content}</p>
+                <strong className="text-[.9rem] text-orange-color">
+                  {location}
+                </strong>
               </div>
             ))}
           </div>

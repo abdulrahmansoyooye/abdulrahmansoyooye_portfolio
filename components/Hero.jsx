@@ -12,7 +12,7 @@ export function Hero() {
             I'm Soyooye Abdulrahman
           </div>
           <div className="flex flex-wrap justify-center  w-full font-[500]">
-            Dedicated Develper
+            A develper you can trust
           </div>
         </div>{" "}
         <div className="w-[50%] sm:w-[20%] m-[0rem_auto] ">

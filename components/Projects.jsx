@@ -44,8 +44,8 @@ export function Projects() {
     <div className="flex flex-col flex-wrap justify-center  p-[2rem]  items-center gap-[3rem] text-dark-blue-color">
       <div className=" flex flex-col justify-center items-center ">
         <span className="large-text serif-text text-center font-[500] bg-gradient">
-          <span className="red-gradient">Beautiful</span> Websites I{" "}
-          <span className="red-gradient">Built</span>
+          <span className="text-orange-color">Beautiful</span> Websites I{" "}
+          <span className="text-orange-color">Built</span>
         </span>
         <div className="text-center ">
           These were created entirely from scratch; not YouTube code-along

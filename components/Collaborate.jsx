@@ -3,15 +3,16 @@ import { Worldwide } from "./Worldwide";
 
 const Collaborate = () => {
   return (
-    <div className="flex flex-col gap-[2rem] p-[0rem_4rem] pt-[2rem]  justify-between items-center ">
-      <div className="flex flex-col gap-[2rem] w-[70%] max-lg:w-full m-auto justify-start  text-center">
+    <div className="flex flex-col gap-[2rem] p-[0rem_2rem] pt-[2rem]  justify-between items-center ">
+      <div className="flex flex-col gap-[2rem] w-[70%]  max-lg:w-full m-auto justify-start  text-center">
         <div className="large-text serif-text font-[500] ">
-          We can <span className="red-gradient">work</span> together from
-          anywhere in the <span className="red-gradient">world</span>
+          We can <span className="text-red-color">work</span> together from
+          anywhere in the <span className="text-red-color">world</span>
         </div>
         <div className="">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-          quae voluptate.
+          I am proficient at <strong>collaborating</strong> with individuals and
+          teams from all <span>corners of the globe</span>, ensuring seamless
+          communication and productive partnerships regardless of location.
         </div>
       </div>
       <div className="max-lg:w-full">
