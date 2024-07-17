@@ -7,7 +7,7 @@ const Certified = () => {
       <div className="flex flex-col sm:w-[70%] m-auto gap-[1rem]">
         <div className="large-text serif-text text-center">
           Full Stack Developer{" "}
-          <span className="red-gradient">Certified by IBM</span>
+          <span className="red-gradient">Certified By IBM</span>
         </div>
         <div className="text-[0.9rem] text-center">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis

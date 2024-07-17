@@ -1,4 +1,4 @@
-import { Titillium_Web, Bree_Serif, DM_Sans } from "next/font/google";
+import { Titillium_Web, Bree_Serif, DM_Sans, Inika } from "next/font/google";
 import "./globals.css";
 
 const titillium_Web = Titillium_Web({
@@ -8,9 +8,9 @@ const titillium_Web = Titillium_Web({
   display: "swap",
   variable: "--font-tillium",
 });
-export const bree_Serif = Bree_Serif({
+export const bree_Serif = Inika({
   subsets: ["latin"],
-  weight: ["400"],
+  weight: ["400", "700"],
 
   display: "swap",
   variable: "--font-serif",

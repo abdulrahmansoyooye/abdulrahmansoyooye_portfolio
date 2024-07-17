@@ -24,24 +24,13 @@ body {
 .tillium-text {
   font-family: var(--font-tillium);
 }
-.notched-btn {
-  clip-path: polygon(
-    0% 30%,
-    /* top left */ 10% 0%,
-    /* top left */ 100% 0%,
-    /* top right */ 100% 0%,
-    /* top right */ 100% 95%,
-    /* bottom right */ 100% 100%,
-    /* bottom right */ 100% 100%,
-    /* bottom left */ 0 100% /* bottom left */
-  );
-}
+
 @layer utilities {
   .bg-blur {
     @apply break-inside-avoid bg-alt-color shadow-[inset_10px_100px_180px_0_rgb(199,199,199,0.3)] bg-clip-padding backdrop-blur-[0.5rem] backdrop-filter  h-fit;
   }
   .yellow_btn {
-    @apply bg-orange-color p-[1rem] rounded-md text-light-color w-full transition-all duration-300 hover:bg-orange-color;
+    @apply bg-orange-color p-[1rem] rounded-md text-light-color w-full transition-all duration-300 hover:bg-blue-color;
   }
   .blue_btn {
     @apply bg-blue-color p-[1rem] rounded-md text-light-color w-full transition-all duration-300 hover:bg-orange-color;
@@ -56,7 +45,7 @@ body {
     @apply bg-gradient-to-tl from-red-color via-red-color to-dark-blue-color  bg-clip-text text-transparent;
   }
   .orange-gradient {
-    @apply bg-gradient-to-tl from-orange-color via-orange-color to-dark-blue-color  bg-clip-text text-transparent;
+    @apply bg-gradient-to-tl from-orange-color via-orange-color to-blue-color  bg-clip-text text-transparent;
   }
   .rounded {
     @apply rounded-[0.8rem];

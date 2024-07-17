@@ -16,7 +16,7 @@ const Collaborate = () => {
       </div>
       <div className="max-lg:w-full">
         {/* <Worldwide /> */}
-        <img src={"/assets/images/globe.jpg"} className="w-full" />
+        <img src={"/assets/stacks/map.svg"} className="w-full" />
       </div>
     </div>
   );

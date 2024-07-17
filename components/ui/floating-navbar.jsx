@@ -49,7 +49,7 @@ export const FloatingNav = ({ navItems, className }) => {
         className={cn(
           ` flex flex-col w-[90%] ${
             navToggle && "h-[6rem] transition-all duration-300 "
-          } gap-[1rem] overflow-clip sm:w-[40%] justify-between items-center mx-auto border rounded-[0.8rem] z-[90000] bg-alt-color px-10 py-5  space-x-4 `,
+          } gap-[1rem] overflow-clip sm:w-[40%] justify-between items-center mx-auto border rounded-[0.8rem]  bg-[#ffff] px-10 py-5  space-x-4 `,
           className
         )}
       >

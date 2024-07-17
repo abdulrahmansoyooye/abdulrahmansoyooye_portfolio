@@ -25,7 +25,7 @@ export function Navbar() {
     },
   ];
   return (
-    <div className="flex flex-col gap-[1rem] fixed w-full z-50">
+    <div className="flex flex-col gap-[1rem] fixed w-full z-[1000]">
       <div></div>
       <FloatingNav navItems={navItems} />
     </div>

@@ -5,7 +5,7 @@ import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 
 export function Testimonials() {
   return (
-    <div className="flex flex-col gap-[2rem] items-center justify-center overflow-hidden text-dark-blue-color">
+    <div className="flex flex-col gap-[2rem] items-center justify-center overflow-hidden text-dark-blue-color p-[2rem]">
       <div className="large-text serif-text text-center font-[500] ">
         {" "}
         Words from

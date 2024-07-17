@@ -13,7 +13,7 @@ module.exports = {
     extend: {
       colors: {
         "alt-color": "#f8f9fa",
-        "background-color": "#FFFFF",
+        "background-color": "#FFFF",
 
         "red-color": "#dd494b",
         "orange-color": "#D67D3E",

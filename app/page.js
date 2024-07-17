@@ -17,14 +17,16 @@ export default function Home() {
         <Navbar />
       </div>
       <div className="w-full bg-alt-color">
-        <img src="/assets/images/bgimage.png" className="w-full fixed  " />
+        <img src="/assets/images/bgimage.png" className="w-full absolute  " />
+
         <Hero />
       </div>
-      <div className="bg-white pb-[5rem]  relative ">
+      <div className="bg-alt-color pb-[5rem]  relative ">
+        <img
+          src="/assets/stacks/blue-bottom.svg"
+          className="w-full absolute rotate-180 -z-50"
+        />
         <About />
-      </div>
-      <div className="bg-alt-color pb-[5rem] relative">
-        <Certified />
       </div>
       <div className="bg-white pb-[5rem] relative">
         <img
@@ -32,6 +34,9 @@ export default function Home() {
           className="w-full absolute rotate-180 "
         />
         <Projects />
+      </div>
+      <div className="bg-alt-color pb-[5rem] relative">
+        <Certified />
       </div>
       <div className="relative z-[100] bg-alt-color pb-[5rem]">
         <Experience />

@@ -21,7 +21,7 @@ const FrontendStacks = [
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg",
   },
   {
-    name: "Nextjs",
+    name: "Java script",
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg",
   },
   {
@@ -64,60 +64,31 @@ const FrontendStacks = [
 const BackendStacks = [];
 const About = () => {
   return (
-    <div className="flex flex-col p-[2rem] text-dark-blue-color gap-[2rem] z-[100px]">
-      <div className="large-text serif-text text-center ">
-        <span className="text-orange-color">Know</span> more{" "}
-        <span className="text-orange-color">about</span> me
+    <div className="flex flex-col p-[1rem] text-dark-blue-color gap-[2rem] z-[100px]">
+      <div className="large-text serif-text text-center red-gradient">
+        <span className="">Know</span> More <span className="">About</span> Me
       </div>
       {/* About */}
       <div className="flex max-md:flex-col gap-[4rem] h-full p-[1rem] sm:p-[3rem]">
         {/* Information */}
-        <div className="flex flex-col gap-[4rem] w-full justify-between sm:w-[50%]">
-          <div className="flex flex-col gap-[1rem]">
+        <div className="flex flex-col gap-[4rem] w-full  ">
+          <div className="flex flex-col gap-[1rem] text-center sm:text-left">
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
-              facilis quasi quo sint earum alias quae iure magni nemo cumque
-              doloremque perferendis id, quam ex! Magni nostrum ab earum libero.
+              Full Stack Developer with years of experience in developing robust
+              web applications using cutting edge technologies.Checkout my
+              projects for more
             </p>{" "}
           </div>
           <div className="sm:flex gap-[2rem] hidden">
             <button className="black_btn">Projects</button>
           </div>
         </div>
-        <div className="sm:w-[50%] w-full  ">
-          <div className="flex flex-wrap gap-[1rem] w-full px-[1rem] items-start justify-start h-full">
-            <div className="text-center p-[2rem] bg-alt-color text-dark-blue-color rounded w-[150px] ">
-              Dedicated Developer
-            </div>
-            <div className="text-center p-[2rem] bg-alt-color text-dark-blue-color rounded w-[150px] ">
-              Tech Enthusiast
-            </div>
-            <div className="text-center p-[2rem] bg-alt-color text-dark-blue-color rounded w-[150px] ">
-              Problem Solver
-            </div>
-            <div className="text-center p-[2rem] bg-alt-color text-dark-blue-color rounded w-[150px] ">
-              Problem Solver
-            </div>
-            <div className="text-center p-[2rem] bg-alt-color text-dark-blue-color rounded w-[150px] ">
-              Problem Solver
-            </div>
-            <div className="text-center p-[2rem] bg-alt-color text-dark-blue-color rounded w-[150px] ">
-              Problem Solver
-            </div>
-          </div>
+        <div className="flex flex-wrap  sm:w-[70%]  w-full ">
+          <TechStack stacks={FrontendStacks} />
         </div>
         <div className="flex gap-[2rem] sm:hidden ">
           <button className="black_btn">Projects</button>
         </div>
-      </div>
-      <div className="flex flex-col flex-wrap gap-[2rem] w-full   justify-center items-center">
-        {/* Frontend */}
-        <div className="flex flex-col gap-[1rem] w-full">
-          <div className="w-full">
-            <TechStack stacks={FrontendStacks} />
-          </div>
-        </div>
-        {/* Backend */}
       </div>
     </div>
   );
