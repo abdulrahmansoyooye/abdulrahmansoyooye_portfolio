@@ -26,6 +26,9 @@ body {
 }
 
 @layer utilities {
+  .text-underline {
+    @apply block  w-[60px] h-[10px] bg-red-color rounded-lg;
+  }
   .bg-blur {
     @apply break-inside-avoid bg-alt-color shadow-[inset_10px_100px_180px_0_rgb(199,199,199,0.3)] bg-clip-padding backdrop-blur-[0.5rem] backdrop-filter  h-fit;
   }

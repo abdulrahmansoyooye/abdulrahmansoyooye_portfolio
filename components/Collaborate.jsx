@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Worldwide } from "./Worldwide";
+import Underline from "./Underline";
 
 const Collaborate = () => {
   return (
@@ -8,6 +9,7 @@ const Collaborate = () => {
         <div className="large-text serif-text font-[500] ">
           We can <span className="text-red-color">work</span> together from
           anywhere in the <span className="text-red-color">world</span>
+          <Underline />
         </div>
         <div className="">
           I am proficient at <strong>collaborating</strong> with individuals and

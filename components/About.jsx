@@ -1,4 +1,5 @@
 import TechStack from "./TechStack";
+import Underline from "./Underline";
 const FrontendStacks = [
   {
     name: "Nextjs",
@@ -44,6 +45,7 @@ const About = () => {
     <div className="flex flex-col p-[1rem] text-dark-blue-color gap-[2rem] z-[100px]">
       <div className="large-text serif-text text-center red-gradient">
         Say Hi to Me and My Tech stacks
+        <Underline />
       </div>
       {/* About */}
       <div className="flex max-md:flex-col gap-[4rem] h-full p-[1rem] sm:p-[3rem]">

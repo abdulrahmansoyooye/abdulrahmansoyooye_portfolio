@@ -1,3 +1,5 @@
+import Underline from "./Underline";
+
 const experience = [
   {
     Title: "Frontend Developer",
@@ -21,8 +23,9 @@ const experience = [
 const Experience = () => {
   return (
     <div className="flex flex-col p-[2rem] text-dark-blue-color gap-[2rem]">
-      <div className="large-text serif-text text-center ">
+      <div className="flex flex-col  items-center large-text serif-text text-center ">
         <span className="orange-gradient">Explore My Developer Journey</span>
+        <Underline />
       </div>
       {/* Experience */}
       <div className="flex flex-col border  p-[1rem] rounded  gap-[2rem] h-full sm:p-[3rem]">
