@@ -5,23 +5,23 @@ export function Navbar() {
   const navItems = [
     {
       name: "Home",
-      link: "/",
+      link: "home",
     },
     {
       name: "About",
-      link: "/about",
+      link: "about",
     },
     {
       name: "Projects",
-      link: "/contact",
+      link: "projects",
     },
     {
       name: "Experience",
-      link: "/contact",
+      link: "experience",
     },
     {
-      name: "Contact",
-      link: "/contact",
+      name: "Collaborate",
+      link: "collaborate",
     },
   ];
   return (

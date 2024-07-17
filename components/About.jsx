@@ -43,15 +43,15 @@ const BackendStacks = [];
 const About = () => {
   return (
     <div className="flex flex-col p-[1rem] text-dark-blue-color gap-[2rem] z-[100px]">
+      <Underline />
       <div className="large-text serif-text text-center red-gradient">
         Say Hi to Me and My Tech stacks
-        <Underline />
       </div>
       {/* About */}
       <div className="flex max-md:flex-col gap-[4rem] h-full p-[1rem] sm:p-[3rem]">
         {/* Information */}
         <div className="flex flex-col gap-[4rem] w-full ">
-          <div className="flex flex-col gap-[1rem] text-left  text-[1.1rem] justify-between  h-full">
+          <div className="flex flex-col gap-[2rem] text-left  text-[1.1rem] justify-between  h-full">
             <p>
               Hey there! I'm Abdulrahman, a web developer, turning coffee into
               code and dreams into reality. My journey through the digital
@@ -75,7 +75,14 @@ const About = () => {
               the drama. It’s like being a superhero with an invisible cape.
             </p>{" "}
             <div className="sm:flex gap-[2rem] hidden ">
-              <button className="black_btn">My Projects</button>
+              <a
+                href="https://wa.link/m00hwp"
+                target="_blank"
+                className="w-full"
+              >
+                {" "}
+                <button className="black_btn">Let's Collaborate</button>
+              </a>
             </div>
           </div>
         </div>
@@ -83,7 +90,10 @@ const About = () => {
           <TechStack stacks={FrontendStacks} />
         </div>
         <div className="flex gap-[2rem] sm:hidden ">
-          <button className="black_btn">My Projects</button>
+          <a href="https://wa.link/m00hwp" target="_blank" className="w-full">
+            {" "}
+            <button className="black_btn">Let's Collaborate</button>
+          </a>
         </div>
       </div>
     </div>

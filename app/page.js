@@ -8,6 +8,7 @@ import { Hero } from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
 import { Projects } from "@/components/Projects";
 import { Testimonials } from "@/components/Testimonial";
+import Underline from "@/components/Underline";
 import { useState } from "react";
 
 export default function Home() {
@@ -16,37 +17,48 @@ export default function Home() {
       <div className="">
         <Navbar />
       </div>
-      <div className="w-full bg-alt-color">
+      <section id="home" className="w-full bg-alt-color">
         <img src="/assets/images/bgimage.png" className="w-full absolute  " />
 
         <Hero />
-      </div>
-      <div className="bg-alt-color pb-[5rem] pt-[4rem] relative ">
+      </section>
+      <section
+        id="about"
+        className="bg-alt-color pb-[5rem] pt-[4rem] relative "
+      >
         <img
           src="/assets/stacks/blue-bottom.svg"
           className="w-full absolute rotate-180 -z-50"
         />
         <About />
-      </div>
-      <div className="bg-white pb-[5rem] relative">
+      </section>
+      <section id="projects" className="bg-white pb-[5rem] relative">
         <img
           src="/assets/images/bgimage.png"
           className="w-full absolute rotate-180 "
         />
         <Projects />
-      </div>
-      <div className=" pb-[5rem] relative">
+      </section>
+      <section id="certified" className=" pb-[5rem] relative">
         <Certified />
-      </div>
-      <div className="relative z-[100] bg-alt-color pb-[5rem]">
+      </section>
+      <section
+        id="experience"
+        className="relative z-[100] bg-alt-color pb-[5rem]"
+      >
         <Experience />
-      </div>
+      </section>
       {/* <div className="z-[100] bg-white pb-[5rem] relative">
         <Testimonials />
       </div>{" "} */}
-      <div className="z-[100] bg-alt-color pb-[5rem] relative">
+
+      <section
+        id="collaborate"
+        className="z-[100] bg-alt-color pb-[5rem] relative"
+      >
+        <Underline />
         <Collaborate />
-      </div>
+      </section>
       <div className="z-[100] ">
         <Footer />
       </div>

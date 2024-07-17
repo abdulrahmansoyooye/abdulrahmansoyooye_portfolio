@@ -8,7 +8,7 @@ const experience = [
       "As a frontend developer, I breathe life into web designs, creating interactive and visually appealing applications. My role was pivotal in Sayf Network, where I developed a sleek, mobile-responsive interface with a landing page and six additional pages",
   },
   {
-    Title: "",
+    Title: "Personal Project",
     location: "Personal Project",
     content:
       "One of my favorite personal projects is the Anonymous Message platform. This project showcases my ability to create secure and user-centric applications. I developed a system where users can send anonymous messages to the admin, ensuring their privacy and the security of their messages",
@@ -23,9 +23,9 @@ const experience = [
 const Experience = () => {
   return (
     <div className="flex flex-col p-[2rem] text-dark-blue-color gap-[2rem]">
+      <Underline />
       <div className="flex flex-col  items-center large-text serif-text text-center ">
-        <span className="orange-gradient">Explore My Developer Journey</span>
-        <Underline />
+        <span className="text-orange-color">Explore My Developer Journey</span>
       </div>
       {/* Experience */}
       <div className="flex flex-col border  p-[1rem] rounded  gap-[2rem] h-full sm:p-[3rem]">
@@ -38,11 +38,11 @@ const Experience = () => {
                 className="flex flex-col gap-[1rem] justify-start p-[2rem] bg-[#ffff] text-dark-blue-color rounded w-full sm:max-w-[40%]"
                 key={`${index}-${location}`}
               >
-                <p className="font-[600] text-[1.3rem]">{Title}</p>
+                <p className="font-[600] text-[1.3rem] text-red-color">
+                  {Title}
+                </p>
                 <p className="text-[1rem] ">{content}</p>
-                <strong className="text-[.9rem] text-orange-color">
-                  {location}
-                </strong>
+                <strong className="text-[.9rem] ">{location}</strong>
               </div>
             ))}
           </div>

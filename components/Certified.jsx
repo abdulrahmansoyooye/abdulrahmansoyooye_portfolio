@@ -18,16 +18,23 @@ const Certified = () => {
           more value to my <strong>projects and collaborations</strong>.
         </div>
       </div>
-      <div className="p-[2rem] rounded border-2 w-full sm:w-[70%] m-[0rem_auto]">
+      <div className="p-[2rem] rounded border w-full sm:w-[70%] m-[0rem_auto]">
         <Image
-          src={"/assets/images/certificate.jpeg"}
+          src={"/assets/images/certificate.jpg"}
           width={700}
           height={400}
           className="m-auto"
         />
       </div>
       <div className="w-[50%] sm:w-[20%] m-[0rem_auto]">
-        <button className="black_btn ">View Link</button>
+        <a
+          href="https://coursera.org/verify/FXLKTZBZ7UFX"
+          target="_blank"
+          className="w-full"
+        >
+          {" "}
+          <button className="black_btn">View Link</button>
+        </a>
       </div>
     </div>
   );

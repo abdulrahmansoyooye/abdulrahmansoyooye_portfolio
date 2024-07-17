@@ -78,7 +78,8 @@ export const FloatingNav = ({ navItems, className }) => {
           {navItems.map((navItem, idx) => (
             <Link
               key={`link=${idx}`}
-              href={navItem.link}
+              href={`#${navItem.link}`}
+              passHref
               className={cn("relative items-center flex space-x-1 ")}
             >
               <div className="block cursor-pointer font-[400] transition-all duration-300 hover:mt-2">
