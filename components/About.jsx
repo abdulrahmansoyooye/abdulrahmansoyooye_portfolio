@@ -1,3 +1,5 @@
+import CodeBlock from "./CodeBlock.jsx";
+
 export default function About() {
   return (
     <div className="bg-gray-50 dark:bg-gray-900 py-24 sm:py-32">
@@ -19,8 +21,8 @@ export default function About() {
                   I prioritize team work and co opearation
                 </p>
                 <p className="mt-2 max-w-lg text-sm text-gray-600 dark:text-gray-400 max-lg:text-center">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                  qui lorem cupidatat commodo.
+                  Teamwork makes the dream work! I prioritize collaboration and
+                  clear communication to ensure we achieve success together
                 </p>
               </div>
               <div className="relative min-h-[30rem] w-full grow max-lg:mx-auto max-lg:max-w-sm">
@@ -45,8 +47,8 @@ export default function About() {
                   I deliver top quality works all the time
                 </p>
                 <p className="mt-2 max-w-lg text-sm text-gray-600 dark:text-gray-400 max-lg:text-center">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit
-                  maiores impedit.
+                  I’m all about quality—delivering top-notch work that exceeds
+                  expectations, every time
                 </p>
               </div>
               <div className="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2 ">
@@ -69,8 +71,8 @@ export default function About() {
                   You will never be gohsted{" "}
                 </p>
                 <p className="mt-2 max-w-lg text-sm text-gray-600 dark:text-gray-400 max-lg:text-center">
-                  I don't dissapear to so be rest assured, you will never be
-                  ghosted
+                  You’ll never be left hanging—I’m committed to consistent
+                  updates and reliable communication
                 </p>
               </div>
               <div className="flex flex-1 p-2 rounded-t-md  px-8 pt-8 sm:px-10 sm:pt-10 justify-center items-center max-lg:py-6 lg:pb-2">
@@ -93,8 +95,8 @@ export default function About() {
                   Wrtiting Clean codes using best practices
                 </p>
                 <p className="mt-2 max-w-lg text-sm text-gray-600 dark:text-gray-400 max-lg:text-center">
-                  Sit quis amet rutrum tellus ullamcorper ultricies libero dolor
-                  eget sem sodales gravida.
+                  Clean, maintainable code is my standard. I follow best
+                  practices to ensure your project is built to last
                 </p>
               </div>
               <div className="relative min-h-[30rem] w-full grow">
@@ -110,7 +112,7 @@ export default function About() {
                     </div>
                   </div>
                   <div className="px-6 pb-14 pt-6">
-                    {/* Your code example */}
+                   <CodeBlock />
                   </div>
                 </div>
               </div>

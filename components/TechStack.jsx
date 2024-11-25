@@ -8,35 +8,43 @@ const stacks = [
     src: "react",
   },
   {
+    name: "Javascript",
+    src: "javascript",
+  },
+  {
     name: "Typescript",
-    src: "node",
+    src: "typescript",
   },
   {
     name: "Nextjs",
-    src: "next",
+    src: "nextjs",
   },
   {
     name: "Mongodb",
-    src: "node",
+    src: "mongodb",
   },
   {
-    name: "Nodejs",
-    src: "node",
+    name: "Tailwind",
+    src: "tailwind",
+  },
+  {
+    name: "Git",
+    src: "git",
   },
 ];
 export default function TechStack() {
   return (
-    <div className="bg-gray-900 py-24 sm:py-32">
+    <div className="bg-gray-900 py-24 sm:py-32" id="skills">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-x-8 gap-y-16 lg:grid-cols-2">
           <div className="mx-auto w-full max-w-xl lg:mx-0">
             <h2 className="text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-              Top rated developer with the right skills
+              Explore the technologies I use to build exceptional web apps
             </h2>
             <p className="mt-6 text-lg/8 text-gray-300">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
-              egestas tempus tellus etiam sed. Quam a scelerisque amet
-              ullamcorper eu enim et fermentum, augue.
+              You need a developer with the skills to bring your ideas to pages.
+              From building responsive frontends to developing scalable backend
+              applications
             </p>
           </div>
           <div className="mx-auto grid w-full gap-[1rem] max-w-xl grid-cols-2 items-center gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:pl-8">

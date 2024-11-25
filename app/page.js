@@ -1,12 +1,10 @@
 "use client";
 import About from "@/components/About";
-import Certified from "@/components/Certified";
 import Collaborate from "@/components/Collaborate";
-import Experience from "@/components/Exprience";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
-import { Navbar } from "@/components/Navbar";
 import Projects from "@/components/Projects";
+import Hooker from "@/components/Hooker";
 import TechStack from "@/components/TechStack";
 import { Testimonials } from "@/components/Testimonial";
 import Underline from "@/components/Underline";
@@ -24,13 +22,17 @@ export default function Home() {
         {" "}
         <About />
       </section>
-
-      <section id="skills">
-        <TechStack />
+      <section id="hooker">
+        {" "}
+        <Hooker />
       </section>
+
       <section id="projects">
         {" "}
         <Projects />
+      </section>
+      <section id="stacks">
+        <TechStack />
       </section>
       <section id="collaborate">
         {" "}
