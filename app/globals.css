@@ -18,14 +18,7 @@ html {
   --dark-color: #fffff;
 }
 body {
-  font-family: var(--font-tillium);
   background-color: var(--background-color);
-}
-.serif-text {
-  font-family: var(--font-serif);
-}
-.tillium-text {
-  font-family: var(--font-tillium);
 }
 
 @layer utilities {
@@ -59,4 +52,23 @@ body {
   .large-text {
     @apply text-[2.2rem] sm:text-[2.5rem];
   }
+}
+
+.blue {
+  color: #0000ff;
+}
+.green {
+  color: #008000;
+}
+.red {
+  color: #ff0000;
+}
+.purple {
+  color: #800080;
+}
+.yellow {
+  color: #ffd700;
+}
+.text {
+  color: #000000;
 }

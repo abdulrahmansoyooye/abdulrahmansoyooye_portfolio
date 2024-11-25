@@ -1,98 +1,229 @@
-"use client";
+// export default function Projects() {
+//   return (
+//     <div className="bg-gray-900 py-24 sm:py-32">
+//       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+//         <h2 className="text-base/7 font-semibold text-indigo-400">
+//           My Projects
+//         </h2>
+//         <p className="mt-2 max-w-lg text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+//           High Quality Projects for happy clients
+//         </p>
+//         <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6  lg:grid-rows-4">
+//           <div className="flex p-px lg:col-span-4">
+//             <div className="overflow-hidden rounded-lg bg-gray-800 ring-1 ring-white/15 max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]">
+//               <img
+//                 alt=""
+//                 src="/assets/images/project-sayf.jpg"
+//                 className="h-80 object-contain object-left"
+//               />
+//               <div className="p-10">
+//                 <h3 className="text-sm/4 font-semibold text-gray-400">
+//                   Full stack Developer at Sayf Network
+//                 </h3>
+//                 <p className="mt-2 text-lg font-medium tracking-tight text-white">
+//                   Sayf Network for Productivity
+//                 </p>
+//                 <p className="mt-2 max-w-lg text-sm/6 text-gray-400">
+//                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+//                   gravida justo et nulla efficitur, maximus egestas sem
+//                   pellentesque.
+//                 </p>
+//                 <a href="#" className="text-sm/6 font-semibold text-white">
+//                   View live <span aria-hidden="true">&rarr;</span>
+//                 </a>
+//               </div>
+//             </div>
+//           </div>
+//           <div className="flex p-px lg:col-span-2">
+//             <div className="overflow-hidden rounded-lg bg-gray-800 ring-1 ring-white/15 lg:rounded-tr-[2rem]">
+//               <img
+//                 alt=""
+//                 src="/assets/images/project-qa.jpg"
+//                 className="h-80 object-cover object-center"
+//               />
+//               <div className="p-10">
+//                 <h3 className="text-sm/4 font-semibold text-gray-400">
+//                   Full stack project
+//                 </h3>
+//                 <p className="mt-2 text-lg font-medium tracking-tight text-white">
+//                   AI Powered Islamic Question and Answer
+//                 </p>
+//                 <p className="mt-2 max-w-lg text-sm/6 text-gray-400">
+//                   Curabitur auctor, ex quis auctor venenatis, eros arcu rhoncus
+//                   massa.
+//                 </p>
+//                 <a href="#" className="text-sm/6 font-semibold text-white">
+//                   View live <span aria-hidden="true">&rarr;</span>
+//                 </a>
+//               </div>
+//             </div>
+//           </div>
+//           <div className="flex p-px lg:col-span-2">
+//             <div className="overflow-hidden rounded-lg bg-gray-800 ring-1 ring-white/15 lg:rounded-bl-[2rem]">
+//               <img
+//                 alt=""
+//                 src="/assets/images/project-nexatage.jpg"
+//                 className="h-80 object-cover object-center"
+//               />
+//               <div className="p-10">
+//                 <h3 className="text-sm/4 font-semibold text-gray-400">
+//                   Team lead at Nexatage{" "}
+//                 </h3>
+//                 <p className="mt-2 text-lg font-medium tracking-tight text-white">
+//                   Distinct pattern fashion store app
+//                 </p>
+//                 <p className="mt-2 max-w-lg text-sm/6 text-gray-400">
+//                   Vestibulum ante ipsum primis in faucibus orci luctus et
+//                   ultrices posuere cubilia.
+//                 </p>
+//                 <a href="#" className="text-sm/6 font-semibold text-white">
+//                   View live <span aria-hidden="true">&rarr;</span>
+//                 </a>
+//               </div>
+//             </div>
+//           </div>
+//           <div className="flex p-px lg:col-span-4">
+//             <div className="overflow-hidden rounded-lg bg-gray-800 ring-1 ring-white/15 max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]">
+//               <img
+//                 alt=""
+//                 src="/assets/images/project-review.jpg"
+//                 className="h-80 object-cover object-left"
+//               />
+//               <div className="p-10">
+//                 <h3 className="text-sm/4 font-semibold text-gray-400">
+//                   Full Stack Project
+//                 </h3>
+//                 <p className="mt-2 text-lg font-medium tracking-tight text-white">
+//                   Review Tracker webapp
+//                 </p>
+//                 <p className="mt-2 max-w-lg text-sm/6 text-gray-400">
+//                   Sed congue eros non finibus molestie. Vestibulum euismod augue
+//                   vel commodo vulputate. Maecenas at augue sed elit dictum
+//                   vulputate.
+//                 </p>
+//                 <a href="#" className="text-sm/6 font-semibold text-white">
+//                   View live <span aria-hidden="true">&rarr;</span>
+//                 </a>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 
-import Image from "next/image";
-import React from "react";
-import Link from "next/link";
-import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
-const projects = [
-  {
-    id: 2,
-    name: "Sayf Productive Muslims",
-    designation:
-      "Sayf Productive Muslims is a dynamic and mobile-responsive website featuring a sleek landing page and six additional pages. The site supports pagination, ensuring a smooth and organized browsing experience for users on all devices. It aims to enhance productivity within the Muslim community by providing valuable resources and information.",
-    image: "/assets/images/project-sayf.jpg",
-    link: "https://sayfnetwork.vercel.app/",
-  },
-  {
-    id: 1,
-    name: "Review Tracker App",
-    designation:
-      "The Review Tracker App allows users to create an account, log in, and manage their profiles. Users can view their profiles and those of others, edit their information, and log out securely. This app provides a streamlined way for users to track and review various profiles.",
-    image: "/assets/images/project-review.jpg",
-    link: "https://review-tracker-three.vercel.app/",
-  },
-
-  {
-    id: 3,
-    name: "Islamic Question and Answer",
-    designation:
-      "Islamic Q&A is an interactive platform where users can register, log in, and log out. Once logged in, users can ask their Islamic questions, which are promptly answered by an AI bot. This service aims to provide quick and accurate responses to users seeking knowledge and guidance on various Islamic topics. ",
-    image: "/assets/images/project-qa.jpg",
-    link: "https://islamicqa-app.vercel.app/",
-  },
-  {
-    id: 4,
-    name: "Sayf Backend",
-    designation:
-      "The Sayf Backend system provides robust admin access to perform CRUD (Create, Read, Update, Delete) operations efficiently. It manages interactions with the database and integrates with third-party platforms for seamless resource uploads. Significant improvements have been made to enhance the user experience by 70%, ensuring a smooth and intuitive interface for administrators.",
-    image: "/assets/images/backend-sayf.jpg",
-    link: "https://github.com/abdulrahmansoyooye/sayfbackend",
-  },
-];
-export function Projects() {
+export default function Projects() {
   return (
-    <div className="flex flex-col flex-wrap justify-center  p-[2rem]  items-center gap-[3rem] text-dark-blue-color">
-      <div className=" flex flex-col justify-center items-center ">
-        <span className="large-text serif-text text-center font-[500] bg-gradient">
-          <span className="text-orange-color">Beautiful</span> Websites I{" "}
-          <span className="text-orange-color">Built</span>
-        </span>
-        <div className="text-center ">
-          These were created entirely from scratch; not YouTube code-along
-          tutorials.
-        </div>
-      </div>
-      <div className="flex flex-wrap justify-center w-[100%]  max-lg:w-full items-center gap-[5rem]">
-        {projects.map(({ id, image, name, designation, link }, index) => (
-          <CardContainer className="inter-var" key={id}>
-            <CardBody
-              key={id}
-              className={`border h-auto rounded p-6 shadow-md bg-alt-color `}
-            >
-              <CardItem translateZ="100" className="w-full mt-2">
-                <Image
-                  src={image}
-                  height="1000"
-                  width="1000"
-                  className="h-80 w-120 object-cover rounded group-hover/card:shadow-xl "
-                  alt="thumbnail"
-                />
-              </CardItem>
-              <CardItem className="text-[1.5rem] text-dm font-bold text-text-color mt-4">
-                {name}
-              </CardItem>
-              <CardItem
-                as="p"
-                translateZ="60"
-                className="text-neutral-500 text max-w-sm mt-2 dark:text-neutral-300"
-              >
-                {designation.slice(0, 80)}...
-              </CardItem>
-
-              <div className="flex justify-between items-center mt-10">
-                <CardItem
-                  translateZ={20}
-                  as={Link}
-                  href={link}
-                  target="__blank"
-                  className="px-4 py-2 rounded border w-full text-center font-normal "
-                >
-                  See it live →
-                </CardItem>
+    <div className="bg-gray-900 py-24 sm:py-32">
+      <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+        {" "}
+        <h2 className="text-base/7 font-semibold text-indigo-400">
+          My Projects{" "}
+        </h2>{" "}
+        <p className="mt-2 max-w-lg text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+          High Quality Projects for happy clients{" "}
+        </p>
+        <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
+          <div className="flex p-px lg:col-span-4">
+            <div className="overflow-hidden rounded-lg bg-gray-800 ring-1 ring-white/15 max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]">
+              <img
+                alt=""
+                src="https://tailwindui.com/plus/img/component-images/bento-02-releases.png"
+                className="h-80 object-cover object-left"
+              />
+              <div className="p-10">
+                <h3 className="text-sm/4 font-semibold text-gray-400">
+                  Full stack Developer at Sayf Network
+                </h3>
+                <p className="mt-2 text-lg font-medium tracking-tight text-white">
+                  Sayf Network for Productivity
+                </p>
+                <p className="mt-2 max-w-lg text-sm/6 text-gray-400">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  gravida justo et nulla efficitur, maximus egestas sem
+                  pellentesque.
+                </p>
+                <a href="#" className="text-sm/6 font-semibold text-white">
+                  View live <span aria-hidden="true">&rarr;</span>
+                </a>
               </div>
-            </CardBody>
-          </CardContainer>
-        ))}
+            </div>
+          </div>
+          <div className="flex p-px lg:col-span-2">
+            <div className="overflow-hidden rounded-lg bg-gray-800 ring-1 ring-white/15 lg:rounded-tr-[2rem]">
+              <img
+                alt=""
+                src="/assets/images/project-qa.jpg"
+                className="h-80 object-cover object-center"
+              />
+              <div className="p-10">
+                <h3 className="text-sm/4 font-semibold text-gray-400">
+                  Full stack project
+                </h3>
+                <p className="mt-2 text-lg font-medium tracking-tight text-white">
+                  AI Powered Islamic Question and Answer
+                </p>
+                <p className="mt-2 max-w-lg text-sm/6 text-gray-400">
+                  Curabitur auctor, ex quis auctor venenatis, eros arcu rhoncus
+                  massa.
+                </p>
+                <a href="#" className="text-sm/6 font-semibold text-white">
+                  View live <span aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="flex p-px lg:col-span-2">
+            <div className="overflow-hidden rounded-lg bg-gray-800 ring-1 ring-white/15 lg:rounded-bl-[2rem]">
+              <img
+                alt=""
+                src="/assets/images/project-nexatage.jpg"
+                className="h-80 object-cover object-center"
+              />
+              <div className="p-10">
+                <h3 className="text-sm/4 font-semibold text-gray-400">
+                  Team lead at Nexatage{" "}
+                </h3>
+                <p className="mt-2 text-lg font-medium tracking-tight text-white">
+                  Distinct pattern fashion store app
+                </p>
+                <p className="mt-2 max-w-lg text-sm/6 text-gray-400">
+                  Vestibulum ante ipsum primis in faucibus orci luctus et
+                  ultrices posuere cubilia.
+                </p>
+                <a href="#" className="text-sm/6 font-semibold text-white">
+                  View live <span aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="flex p-px lg:col-span-4">
+            <div className="overflow-hidden rounded-lg bg-gray-800 ring-1 ring-white/15 max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]">
+              <img
+                alt=""
+                src="/assets/images/project-review.jpg"
+                className="h-80 object-cover object-left"
+              />
+              <div className="p-10">
+                <h3 className="text-sm/4 font-semibold text-gray-400">
+                  Full Stack Project
+                </h3>
+                <p className="mt-2 text-lg font-medium tracking-tight text-white">
+                  Review Tracker webapp
+                </p>
+                <p className="mt-2 max-w-lg text-sm/6 text-gray-400">
+                  Sed congue eros non finibus molestie. Vestibulum euismod augue
+                  vel commodo vulputate. Maecenas at augue sed elit dictum
+                  vulputate.
+                </p>
+                <a href="#" className="text-sm/6 font-semibold text-white">
+                  View live <span aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
